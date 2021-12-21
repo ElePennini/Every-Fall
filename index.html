@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Every Fall  </title>
+    <style>
+
+
+ 
+      .container {
+        max-width: 650px;
+        margin: 0 auto;
+        border: 2px solid #6c4343;;
+        padding: 30px 30px 30px 30px;
+        display: block;
+        text-align: center;
+border: 2px solid #45171d;
+  background-color:#fecea8;
+
+        border-radius: 20px;
+        font-family: cursive;
+        opacity: 1px;
+        box-shadow: 5px moccasin rgba (0,0,0,0.5);
+      
+      }
+
+      p {padding: 10px;
+        text-align: left;
+     }
+
+      img {
+        max-width: 150px;
+        display: inline;
+        margin: 10px auto;
+        padding: 5px;
+      }
+    
+     a {text-decoration: none;}
+
+     img:hover {
+        background:#e09664; 
+        border-radius: 10px;
+      }
+h1 {font-size: 55px;
+margin: 10px}
+
+h2{margin: 10px ;
+
+font-size: 35px;}
+
+h3 {margin-bottom: 30px;
+font-size: 25px;}
+
+h4 {margin-top: 30px;
+color: #a75265;
+font-size: 25px;
+font-weight: bold;
+ }
+
+.fall {font-style: oblique 80deg;}
+
+button {display: inline;
+margin: 0 auto;
+border-radius: 20px;
+font-size: 15px;
+padding: 10px;
+margin: 10px;
+background-color:#e09664 ;
+border: 2px solid #45171d;
+font-family: cursive;
+transition: all 200ms ease-in-out
+}
+
+button:hover {background-color: #45171d;
+  color: #e09664;
+cursor: pointer;}
+    </style>
+  </head>
+
+  <body>
+  
+     <div class="container">
+      <h1>For Every <span class=fall> Fall 🍂</span> </h1>
+      <h2>Stories to lift you up</h2>
+      <p>
+        Sometimes it's the season, sometimes a bump in the road of life. Who hasn't felt the blues, got their heart broken or taken a wrong turn along the way? The good news is: For every fall - be it seasonal or emotional - there is a story just waiting to be read. A daring character, a wise author, a riveting plot to get you right back into spring!
+      </p>
+      <a href=https://www.goodreads.com/book/show/54785530-what-you-can-see-from-here target=_blank> <img
+      src=https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1601339738l/54785530.jpg
+      alt="Cover of What you Can See from Here"> </a>
+
+      <a href=https://www.goodreads.com/book/show/31434883-eleanor-oliphant-is-completely-fine target=_blank> <img
+      src=https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1493724347l/31434883.jpg
+      alt="Cover of Eleanor Oliphant is Completely Fine"> </a>
+<a href= https://www.goodreads.com/book/show/6642715-the-forty-rules-of-love target=_blank>
+      <img
+      src=https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442161289l/6642715._SY475_.jpg alt="Cover of The Forty Rules of Llove"> </a>
+      <a href=https://www.goodreads.com/book/show/42983724-drive-your-plow-over-the-bones-of-the-dead target=_blank>
+      <img
+      src=https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1547225640l/42983724.jpg alt="Cover of Drive your Plow Over the Bones of the Dead"
+      > </a>
+      <a href=https://www.goodreads.com/book/show/32871394-the-pisces target=_blank>
+      <img
+      src=https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1500926737l/32871394._SY475_.jpg alt="Cover of The Pisces"
+      > </a>
+      <a href=https://www.goodreads.com/book/show/43427042-the-seven-necessary-sins-for-women-and-girls target=_blank>
+      <img
+      src=https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1548877590l/43427042.jpg alt="Cover of The Seven Necessary Sins for Women and Girls" height="226.9px"
+      > </a>
+      <h3>
+        What to read this fall?
+      </h3>
+      <h4></h4>
+      <button>Inner Journey</button>
+      <button id="patriarchy"> 🚫 Patriarchy</button>
+      <button id="heal">Heal & Move On</button>
+      <h3>Happy reading 📖</h3>
+      <h5>Coded by <a href= https://www.linkedin.com/in/eleonorapennini target=_blank>Eleonora Pennini</a> </h>
+
+      </a>
+   
+    </div>
+    <script>
+      function journeyButton() {
+      let topic= prompt("What topic inspires you more: astrology or spirituality?");
+      if (topic === "astrology") {let h4 = document.querySelector ("h4"); h4.innerHTML = "Read: Drive Your Plow over the Bones of the Dead"} 
+      if (topic === "spirituality") {let h4 = document.querySelector ("h4"); h4.innerHTML = "Read: The Forty Rules of Love"} } 
+      let topic = document.querySelector("button");
+      topic.addEventListener("click", journeyButton);
+
+      function patriarchyButton() {
+      let genre = prompt("Would you like to read a novel or an essay?");
+      if (genre === "novel") {let h4 = document.querySelector ("h4"); h4.innerHTML = "Read: What You Can See from Here"} 
+      if (genre === "essay") {let h4 = document.querySelector ("h4"); h4.innerHTML = "Read: The Seven Necessary Sins for Women and Girls"} }
+      let genre = document.getElementById("patriarchy");
+      genre.addEventListener("click", patriarchyButton);
+
+       function healButton() {
+      let  theme = prompt("Do you want to read a novel set in Britain or in California?"); 
+      theme = theme.replace("california", "California"); theme = theme.replace("britain","Britain");
+      if (theme === "California") {let h4 = document.querySelector ("h4"); h4.innerHTML = "Read: The Pisces"} 
+      if (theme === "Britain") {let h4 = document.querySelector ("h4"); h4.innerHTML = "Read: Eleanor Oliphant is completely fine"} }
+      let theme = document.getElementById("heal");
+      theme.addEventListener("click", healButton);
+    </script>
+  </body>
+</html>
